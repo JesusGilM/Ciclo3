@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RENTA DE JUEGOS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/JUEGOS.js"></script>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align:center;
+            }
+            body {
+                background-image: url('img/Juegos.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LISTA DE JUEGOS</h1>
+        <button onclick="location.href = 'menu.html'">Regresar</button>
+        <br>
+        <br>
+        <div>
+            <input type="hidden" id="id" placeholder="id">
+            <input type="text" id="name" placeholder="name">
+            <input type="text" id="developer" placeholder="developer">
+            <input type="number" id="year" placeholder="year">  
+            <input type="text" id="description" placeholder="description">
+            <select name="category" id="category" placeholder="category_id">
+            </select>
+
+            <button onclick="guardarJuego()">Guardar</button>
+            <button onclick="editarJuego()">Editar</button>
+        </div>
+        <br>
+        <div id="resultado"></div>
+    </body>
+</html>

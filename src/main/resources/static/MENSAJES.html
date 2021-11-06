@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>RENTA DE JUEGOS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/MENSAJES.js"></script>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body {
+                background-image: url('img/Juegos.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>MENSAJES</h1>
+        <button onclick="location.href = 'menu.html'">Regresar</button>
+        <br>
+        <br>
+        <div>
+            <input type="hidden" id="idMessage" placeholder="idMessage">
+            <br>
+            <br>
+            <textarea id="messageText" placeholder="messageText" rows="4" cols="50" onkeydown="upperCaseF(this)"></textarea>
+            <br>
+            <br><br>
+            <select name="client" id="client" placeholder="Cliente" placeholder="Cliente">
+
+            </select>
+            <br><br>
+            <select name="game" id="game" placeholder="Juego" placeholder="Juego">
+
+            </select>
+            <br><br>
+            <button onclick="guardarInformacion()">Guardar</button>
+            <button onclick="editarInformacion()">Editar</button>
+        </div>
+        <br>
+        <div id="resultado"></div>
+    </body>
+</html>

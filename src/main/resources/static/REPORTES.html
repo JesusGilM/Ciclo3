@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALQUILER DE JUEGOS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/REPORTES.js"></script>
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align:center;
+            }
+        </style>
+        <style>
+            body {
+                background-image: url('img/Juegos.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>REPORTES</h1>
+        <button onclick="location.href = 'menu.html'">Regresar</button>
+        <br>
+        <br>
+        <div>
+            <input type="date" id="fechaInicial" placeholder="fechaInicial">
+            <input type="date" id="fechaFinal" placeholder="fechaFinal">
+            <button onclick="reporteFechas()">Consulta Reservaciones por fechas</button><br><br>
+            <button onclick="reporteStatus()">Consulta Estado reservas</button><br><br>
+            <button onclick="reporteTop()">Consulta Top Clientes</button>
+        </div>
+        <br>
+        <div id="resultado"></div>
+    </body>
+</html>
